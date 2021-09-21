@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角落畫廊</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="bg-secondary py-1">
+        <div class="container text-right">
+            <a href="#" class="social text-white mr-1"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="social text-white"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.svg" alt="#">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            藝術作品
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">靜態風景</a>
+                            <a class="dropdown-item" href="#">人像攝影</a>
+                            <a class="dropdown-item" href="#">圖畫攝影</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <a class="btn btn-outline-primary mr-2" href="#" data-toggle="modal"
+                        data-target="#loginModal">登入</a>
+                    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#registerModal">註冊</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active mb-1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item bg-cover active"
+                    style="background: url(https://images.unsplash.com/photo-1541753236788-b0ac1fc5009d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80); height: 450px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>佛羅里達雪景</h5>
+                        <p class="mb-1">
+                            <i class="fas fa-calendar-alt mr-3"></i>Published on November 9, 2018
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover"
+                    style="background: url(https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80); height: 450px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>藍煙‧橘霧</h5>
+                        <p class="mb-1">
+                            <i class="fas fa-calendar-alt mr-3"></i>Published on November 9, 2018
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item bg-cover"
+                    style="background: url(https://images.unsplash.com/photo-1519114056088-b877fe073a5e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80); height: 450px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>汪洋沈船</h5>
+                        <p class="mb-1">
+                            <i class="fas fa-calendar-alt mr-3"></i>Published on February 20, 2018
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <section class="bg-secondary py-5">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-4">
+                    <div><i class="fas fa-eye fa-5x"></i></div>
+                    <h3 class="my-3">從風景中思考人生</h3>
+                    <p>
+                        平陽歌舞新承寵，珮聲歸到鳳池頭，紅顏未老恩先斷，鸚鵡前頭不敢言，身無彩鳳雙飛翼，巴山夜雨漲秋池，為有雲屏無限嬌，長河漸落曉星沈。
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div><i class="fas fa-user-edit fa-5x"></i></div>
+                    <h3 class="my-3">從人像中發現故事</h3>
+                    <p>
+                        楚腰纖細掌中輕，共來百越文身地，樓上花枝笑獨眠，春潮帶雨晚來急，論功還欲請長纓，桃花盡日隨流水，剔開紅燄救飛蛾，兒童相見不相識，柳邊人歇待船歸，紗窗日落漸黃昏。
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div><i class="fas fa-palette fa-5x"></i></div>
+                    <h3 class="my-3">從圖畫中產生靈感</h3>
+                    <p>
+                        碧闌干外繡簾垂，潘岳悼亡猶費詞，絳幘雞人報曉籌，欲飲琵琶馬上催，不知何處吹蘆管，芙蓉塘外有輕雷，無端嫁得金龜婿，長河漸落曉星沈，映階碧草自春色。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" style="position: relative;">
+        <div class="row">
+            <div class="col-md-5 bg-cover"
+                style="background: url(https://images.unsplash.com/photo-1554080353-321e452ccf19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80); position: absolute; top: 0; bottom: 0;">
+            </div>
+            <div class="container">
+                <div class="row justify-content-end text-sm-white">
+                    <div class="col-md-7 writings text-md-dark">
+                        <h3 class="text-md-info mb-3">歡迎來到角落畫廊</h3>
+                        <p>
+                            萬里黃河繞黑山，機中錦字論長恨，為他人作嫁衣裳，昔人已乘黃鶴去，小廊迴合曲闌斜，禁門宮樹月痕過，太真含笑入簾來，姑蘇城外寒山寺，蟲聲新透綠窗紗，寂寞空庭春欲晚。</p>
+                        <a href="#" class="btn btn-outline-info">閱讀更多</a>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <h3 class="text-md-info mb-3">畫廊介紹</h3>
+                                <p>鄧攸無子尋知命，閣道迴看上苑花，妝罷低聲問夫婿，只是當時已惘然，徒令上將揮神筆，車走雷聲語未通，君問歸期未有期。</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="text-md-info mb-3">作品種類</h3>
+                                <p>長河漸落曉星沈，宣室求賢訪逐臣，錦官城外柏森森，跨馬出郊時極目，中天月色好誰看，江山故宅空文藻。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark">
+        <div class="container text-white py-5">
+            <h2 class="text-center my-3">如何投稿作品？</h2>
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div><i class="fas fa-camera fa-3x mr-3"></i></div>
+                        <div>
+                            <h3>拍攝你的作品</h3>
+                            <p>
+                                銀燭秋光冷畫屏，密雨斜侵薜荔牆，機中錦字論長恨，六朝如夢鳥空啼，斜拔玉釵燈影畔，太真含笑入簾來，金陵津渡小山樓，猶是春閨夢裡人。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div><i class="fas fa-user-plus fa-3x mr-3"></i></div>
+                        <div>
+                            <h3>註冊畫廊會員</h3>
+                            <p>
+                                冰簟銀床夢不成，愧君猶遣慎風波，漢文有道恩猶薄，霄漢長懸捧日心，山色遙連秦樹晚，平明送客楚山孤，閨中少婦不知愁。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div><i class="fas fa-upload fa-3x mr-3"></i></div>
+                        <div>
+                            <h3>上傳你的作品</h3>
+                            <p>
+                                萬國衣冠拜冕旒，為乘陽氣行時令，松下清齋折露葵，錦瑟無端五十絃，巴山夜雨漲秋池，可憐夜半虛前席，便下襄陽向洛陽，風急天高猿嘯哀。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div><i class="far fa-thumbs-up fa-3x mr-4"></i></div>
+                        <div>
+                            <h3>投稿完成！</h3>
+                            <p>
+                                三峽星河影動搖，正是江南好風景，閒愛孤雲靜愛僧，煙籠寒水月籠沙，楚腰纖細掌中輕，歲歲金河復玉關，江流曲似九迴腸。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" style="position: relative;">
+        <div class="row d-flex justify-content-end">
+            <div class="col-md-5 bg-cover"
+                style="background: url(https://images.unsplash.com/photo-1506241537529-eefea1fbe44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80); position: absolute; top: 0; bottom: 0;">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 text-sm-white writings">
+                        <h3 class="text-info mb-3">拍攝作品小技巧</h3>
+                        <p class="text-md-dark">
+                            萬里寒光生積雪，驛路西連漢畤平，多情只有春庭月，媚眼微看宿鷺窠，月落烏啼霜滿天，猶是春閨夢裡人，等是有家歸未得，隴上羊歸塞草煙，今夜偏知春氣暖，世事空知學醉歌。
+                        </p>
+                        <dl class="row mt-5 text-md-dark">
+                            <dt class="col-sm-3 text-info">構圖法則</dt>
+                            <dd class="col-sm-9 mb-3">今日俸錢過十萬，一片冰心在玉壺，忽見陌頭楊柳色，簾外春寒賜錦袍，雲裡帝城雙鳳闕，松下清齋折露葵。</dd>
+
+                            <dt class="col-sm-3 text-info">拍攝角度</dt>
+                            <dd class="col-sm-9 mb-3">葡萄美酒夜光杯，鸚鵡前頭不敢言，舍南舍北皆春水，便下襄陽向洛陽，萬里悲秋常作客，中天月色好誰看，江山故宅空文藻。</dd>
+
+                            <dt class="col-sm-3 text-info">快門速度</dt>
+                            <dd class="col-sm-9 mb-3">自將磨洗認前朝，煙籠寒水月籠沙，臥看牽牛織女星，身多疾病思田里，上有黃鸝深樹鳴，沙場烽火侵胡月。</dd>
+
+                            <dt class="col-sm-3 text-info text-truncate">光圈大小</dt>
+                            <dd class="col-sm-9 mb-3">此日登臨曙色開，誓掃匈奴不顧身，鄉音無改鬢毛催，澹然空水對斜暉，蜻蜓飛上玉搔頭，山色遙連秦樹晚。
+                            </dd>
+
+                            <dt class="col-sm-3 text-info text-truncate">焦距調整</dt>
+                            <dd class="col-sm-9 mb-3">百年都是幾多時，寒雨連江夜入吳，遍插茱萸少一人，田園寥落干戈後，雙袖龍鍾淚不乾，嗟余聽鼓應官去，更隔蓬山一萬重，鳳尾香羅薄幾重。
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-secondary py-5">
+        <div class="container text-white">
+            <h3 class="text-center mb-5">需要預約看展嗎？</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5148.51757351815!2d120.667144215295!3d24.152377368861096!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d9dd9fe0011%3A0x6f9d8ebd38727566!2z5Yuk576OIOiqoOWTgee2oOWckumBkw!5e0!3m2!1szh-TW!2stw!4v1632225105563!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form action="index.html" class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="username">姓名*</label>
+                            <input type="text" class="form-control" id="username" placeholder="請輸入你的姓名" required>
+                            <div class="invalid-feedback">
+                                請填寫這個欄位 ex：MyName
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">電話*</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="請輸入你的電話" required>
+                            <div class="invalid-feedback">
+                                請填寫這個欄位 ex：0912345678
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">Email*</label>
+                            <input type="email" class="form-control" id="mail" placeholder="請輸入你的Email" required>
+                            <div class="invalid-feedback">
+                                請填寫這個欄位 ex：abcde@mail.com
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">人數*</label>
+                            <input type="number" class="form-control" id="number" placeholder="請輸入此次同行人數" required>
+                            <div class="invalid-feedback">
+                                請填寫這個欄位 ex：2
+                            </div>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                required>
+                            <label class="custom-control-label" for="customRadio1">需要導覽</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"
+                                required>
+                            <div class="invalid-feedback">
+                                請選擇一個欄位
+                            </div>
+                            <label class="custom-control-label" for="customRadio2">不需要導覽</label>
+                        </div>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary mr-3">送出</button>
+                            <button type="button" class="btn btn-light">取消</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-md-6 bg-cover"
+                style="background: url(https://images.unsplash.com/photo-1559750008-4123eec0e352?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);">
+                <div class="col-md-9 p-4 text-white">
+                    <small>加入我們</small>
+                    <h3 class="mb-3">享受我們線上和線下的作品展覽服務，以及熱絡的社群交流。</h3>
+                    <p class="mb-3">
+                        正是江南好風景，自將磨洗認前朝，煙籠寒水月籠沙，臥看牽牛織女星，身多疾病思田里，上有黃鸝深樹鳴，沙場烽火侵胡月，此日登臨曙色開。
+                    </p>
+                    <a href="#" class="btn btn-outline-light">加入我們</a>
+                </div>
+            </div>
+            <div class="col-md-6 bg-cover"
+                style="background: url(https://images.unsplash.com/photo-1565552056232-577871c7688e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);">
+                <div class="col-md-9 p-4 text-white">
+                    <small>參觀展覽</small>
+                    <h3 class="mb-3">現在就來欣賞線上各項展覽，參考其他人的評論以及發表你的回饋。</h3>
+                    <p class="mb-3">
+                        誓掃匈奴不顧身，鄉音無改鬢毛催，澹然空水對斜暉，蜻蜓飛上玉搔頭，山色遙連秦樹晚，百年都是幾多時，寒雨連江夜入吳，遍插茱萸少一人。
+                    </p>
+                    <a href="#" class="btn btn-outline-light">線上看展</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark py-4">
+        <div class="container text-white d-flex">
+            <p class="mr-3">© Copright 2017 六角學院</p>
+            <a href="#">
+                Github
+            </a>
+            <a href="#" class="mx-3">
+                Facebook
+            </a>
+            <a href="#">
+                About
+            </a>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="loginModalLabel">使用者登入 Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="請輸入你的Email">
+                            <small id="emailHelp" class="form-text text-muted">我們不會洩漏你的Email給第三者
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">密碼</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="*********">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">記住帳號</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">還沒有帳號嗎？</a>
+                    <button type="button" class="btn btn-primary">登入</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="registerModalLabel">使用者註冊 Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 text-secondary">
+                            <h3 class="mb-3">註冊角落畫廊</h3>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem iste temporibus
+                                tempora tempore ex consequatur earum iusto alias non.
+                            </p>
+                            <p class="mb-0">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non reprehenderit impedit
+                                alias nobis, distinctio molestias doloremque accusantium ratione, sapiente dolorem animi
+                                praesentium provident cumque in.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="請輸入你的Email">
+                                    <small id="emailHelp" class="form-text text-muted">我們不會洩漏你的Email給第三者
+                                    </small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">密碼</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="*********">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">確認密碼</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="*********">
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">同意條款</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="mr-auto" data-dismiss="modal" data-toggle="modal"
+                        data-target="#loginModal">已經有帳號了嗎？</a>
+                    <button type="button" class="btn btn-success">註冊</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
