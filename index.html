@@ -22,9 +22,9 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="images/logo.svg" alt="#">
-            </a>
+            <h1 class="d-flex align-items-center mb-0"><a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="角落畫廊">
+                </a></h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -157,51 +157,43 @@
     <section class="bg-dark">
         <div class="container text-white py-5">
             <h2 class="text-center my-3">如何投稿作品？</h2>
-            <div class="row my-5">
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div><i class="fas fa-camera fa-3x mr-3"></i></div>
-                        <div>
-                            <h3>拍攝你的作品</h3>
-                            <p>
-                                銀燭秋光冷畫屏，密雨斜侵薜荔牆，機中錦字論長恨，六朝如夢鳥空啼，斜拔玉釵燈影畔，太真含笑入簾來，金陵津渡小山樓，猶是春閨夢裡人。
-                            </p>
-                        </div>
+            <div class="row mt-5">
+                <div class="col-md-6 d-flex">
+                    <div><i class="fas fa-camera fa-3x mr-3"></i></div>
+                    <div>
+                        <h3>拍攝你的作品</h3>
+                        <p>
+                            銀燭秋光冷畫屏，密雨斜侵薜荔牆，機中錦字論長恨，六朝如夢鳥空啼，斜拔玉釵燈影畔，太真含笑入簾來，金陵津渡小山樓，猶是春閨夢裡人。
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div><i class="fas fa-user-plus fa-3x mr-3"></i></div>
-                        <div>
-                            <h3>註冊畫廊會員</h3>
-                            <p>
-                                冰簟銀床夢不成，愧君猶遣慎風波，漢文有道恩猶薄，霄漢長懸捧日心，山色遙連秦樹晚，平明送客楚山孤，閨中少婦不知愁。
-                            </p>
-                        </div>
+                <div class="col-md-6 d-flex">
+                    <div><i class="fas fa-user-plus fa-3x mr-3"></i></div>
+                    <div>
+                        <h3>註冊畫廊會員</h3>
+                        <p>
+                            冰簟銀床夢不成，愧君猶遣慎風波，漢文有道恩猶薄，霄漢長懸捧日心，山色遙連秦樹晚，平明送客楚山孤，閨中少婦不知愁。
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div><i class="fas fa-upload fa-3x mr-3"></i></div>
-                        <div>
-                            <h3>上傳你的作品</h3>
-                            <p>
-                                萬國衣冠拜冕旒，為乘陽氣行時令，松下清齋折露葵，錦瑟無端五十絃，巴山夜雨漲秋池，可憐夜半虛前席，便下襄陽向洛陽，風急天高猿嘯哀。
-                            </p>
-                        </div>
+                <div class="col-md-6 d-flex">
+                    <div><i class="fas fa-upload fa-3x mr-3"></i></div>
+                    <div>
+                        <h3>上傳你的作品</h3>
+                        <p>
+                            萬國衣冠拜冕旒，為乘陽氣行時令，松下清齋折露葵，錦瑟無端五十絃，巴山夜雨漲秋池，可憐夜半虛前席，便下襄陽向洛陽，風急天高猿嘯哀。
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="d-flex">
-                        <div><i class="far fa-thumbs-up fa-3x mr-4"></i></div>
-                        <div>
-                            <h3>投稿完成！</h3>
-                            <p>
-                                三峽星河影動搖，正是江南好風景，閒愛孤雲靜愛僧，煙籠寒水月籠沙，楚腰纖細掌中輕，歲歲金河復玉關，江流曲似九迴腸。
-                            </p>
-                        </div>
+                <div class="col-md-6 d-flex">
+                    <div><i class="far fa-thumbs-up fa-3x mr-4"></i></div>
+                    <div>
+                        <h3>投稿完成！</h3>
+                        <p>
+                            三峽星河影動搖，正是江南好風景，閒愛孤雲靜愛僧，煙籠寒水月籠沙，楚腰纖細掌中輕，歲歲金河復玉關，江流曲似九迴腸。
+                        </p>
                     </div>
                 </div>
             </div>
@@ -276,7 +268,7 @@
                         </div>
                         <div class="form-group">
                             <label for="number">人數*</label>
-                            <input type="number" class="form-control" id="number" placeholder="請輸入此次同行人數" required>
+                            <input type="number" class="form-control" id="number" placeholder="請輸入此次同行人數" min="0" required>
                             <div class="invalid-feedback">
                                 請填寫這個欄位 ex：2
                             </div>
@@ -303,7 +295,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="container-fluid">
         <div class="row">
             <div class="col-md-6 bg-cover"
                 style="background: url(https://images.unsplash.com/photo-1559750008-4123eec0e352?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);">
@@ -356,20 +348,20 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <label for="login-email">Email</label>
+                            <input type="email" class="form-control" id="login-email"
                                 aria-describedby="emailHelp" placeholder="請輸入你的Email">
                             <small id="emailHelp" class="form-text text-muted">我們不會洩漏你的Email給第三者
                             </small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">密碼</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
+                            <label for="login-password">密碼</label>
+                            <input type="password" class="form-control" id="login-password"
                                 placeholder="*********">
                         </div>
                         <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">記住帳號</label>
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">記住帳號</label>
                         </div>
                     </form>
                 </div>
@@ -408,25 +400,25 @@
                         <div class="col-md-6">
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <label for="register-email">Email</label>
+                                    <input type="email" class="form-control" id="register-email"
                                         aria-describedby="emailHelp" placeholder="請輸入你的Email">
                                     <small id="emailHelp" class="form-text text-muted">我們不會洩漏你的Email給第三者
                                     </small>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">密碼</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                    <label for="register-password">密碼</label>
+                                    <input type="password" class="form-control" id="register-password"
                                         placeholder="*********">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">確認密碼</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                    <label for="check-password">確認密碼</label>
+                                    <input type="password" class="form-control" id="check-password"
                                         placeholder="*********">
                                 </div>
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">同意條款</label>
+                                    <input type="checkbox" class="form-check-input" id="agree">
+                                    <label class="form-check-label" for="agree">同意條款</label>
                                 </div>
                             </form>
                         </div>
